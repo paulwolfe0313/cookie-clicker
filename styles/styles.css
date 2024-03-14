@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    background: url('./img/background-img.png') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+#upgrades-owned-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+}
+
+#game-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cookie-counter, #per-second {
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+#cookie-clicker {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#cookie-clicker:active {
+    transform: scale(0.9);
+}
+
+#store-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+}
+
+.store-item {
+    margin-bottom: 10px;
+}
+
+.item-info {
+    margin-bottom: 5px;
+}
+
+.buy-button {
+    background-color: #4CAF50; /* Green background for purchasable buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button.disabled {
+    background-color: #cccccc; /* Light grey */
+    color: #666666; /* Darker grey text to indicate it's disabled */
+    cursor: not-allowed;
+}
+
+/* No hover effect for disabled buttons */
+.buy-button.disabled:hover {
+    background-color: #cccccc;
+}
+
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+.falling-cookie {
+    position: absolute;
+    top: -100px; /* start off-screen, adjusted for larger image */
+    cursor: pointer;
+    transition: top 4s linear; /* animate for 4 seconds */
+    z-index: 9999; /* ensure it's above other elements, adjust if necessary */
+    width: 100px; /* adjust size as needed for easier clicking */
+}
+

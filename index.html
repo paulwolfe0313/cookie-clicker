@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Clicker Clone</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div id="upgrades-owned-container">
+        <h3>Upgrades Owned</h3>
+        <div id="upgrades-owned">
+            <!-- Items will be added here by JavaScript -->
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div id="cookie-counter">0 cookies</div>
+        <div id="per-second">per second: 0</div>
+        <img src="./styles/img/cookie.png" alt="Cookie" id="cookie-clicker">
+    </div>
+
+    <div id="store-container">
+        <h3>Buy Upgrades</h3>
+        <div id="click-upgrade" class="store-item">
+            <div class="item-info">
+                <span class="item-name">Cookie Idle Upgrade</span>
+            </div>
+            <button class="buy-button" onclick="buyUpgrade('click')">Buy</button>
+        </div>
+        <!-- More upgrades can be added here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
